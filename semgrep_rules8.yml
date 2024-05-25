@@ -1,0 +1,9 @@
+rules:
+  - id: detected-etc-shadow
+    languages:
+      - regex
+    severity: ERROR
+    message: linux user detected
+    patterns:
+      - pattern-regex: ^[a-zA-Z0-9]+:\$6\$[a-zA-Z0-9./]+\$[a-zA-Z0-9./]+:\d*:\d*:\d*::.*$
+     

@@ -1,0 +1,11 @@
+rules:
+  - id: rule4
+    patterns:
+      - pattern: eval(...);
+      - pattern-not: eval('...');
+      - pattern-not: eval(f"");
+    message: eval detected
+    languages:
+      - python
+      - php
+    severity: ERROR

@@ -1,0 +1,8 @@
+rules:
+  - id: untitled_rule
+    patterns:
+    - pattern-regex: '\beval[\s]*'
+    message: eval detected
+    languages: 
+     - generic
+    severity: WARNING
